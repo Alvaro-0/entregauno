@@ -1,0 +1,199 @@
+html {
+  background-color: rgb(248, 248, 244);
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+header {
+  display: flex;
+
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  margin: 10;
+  padding: 10;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-decoration-line: underline;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+}
+
+footer {
+  background-color: rgb(230, 230, 225);
+  text-align: right;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 20px;
+
+  justify-content: space-between;
+
+}
+
+
+.flex-item {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: red;
+}
+
+
+.flex-item img {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.carousel-item img {
+  width: 400px;
+  height: 400px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #063674;
+}
+
+.productos_pollo {
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid black;
+  width: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.productos_pollo div img {
+  width: 80px;
+  height: 80px;
+}
+
+#section_pollo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+#section_pastas {
+ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+
+}
+
+.productos_pastas img {
+  width: 100px;
+  height: 100px;
+}
+
+.productos_pastas {
+  border: 2px solid black;
+
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* (teléfonos móviles)  */
+@media  (max-width: 767px) {
+  body {
+    background-color: rgb(20, 133, 170);
+  
+  }
+.flex-container{
+  
+    flex-direction: column;
+
+}
+
+#section_pastas {
+
+  
+    grid-template-columns: 1fr; 
+
+
+}
+#section_pollo{
+  grid-template-columns: 1fr; 
+}
+
+
+}
+
+
+/* (tabletas) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: rgb(15, 224, 15);
+  }
+}
+
+/* (tabletas y pequeñas computadoras de escritorio) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    background-color: rgb(221, 221, 13);
+  }
+}
+
+/*  (computadoras de escritorio) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: lightcoral;
+  }
+}
+
+
